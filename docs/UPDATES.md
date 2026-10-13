@@ -1,6 +1,6 @@
 # Love.fm development updates
 
-[Visit Love.fm](https://kantwonet.github.io/love-fm/) · [Follow the project](FOLLOW.md) · [Detailed milestones](PROGRESS.md)
+[Visit Love.fm](https://kantwonet.github.io/love-fm/) · [Announcement thread](https://github.com/kantwonet/love-fm/discussions/1) · [Notification guide](FOLLOW.md) · [Detailed milestones](PROGRESS.md)
 
 Short, dated public summaries. Product intent, accepted internal work and public releases are different things. The private engineering ledger remains the authority; this page is not live CI.
 

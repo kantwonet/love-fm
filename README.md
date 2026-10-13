@@ -6,7 +6,7 @@
 
 **[Explore every feature](docs/FEATURES.md) · [Roadmap](docs/ROADMAP.md) · [Development progress](docs/PROGRESS.md) · [FAQ](docs/FAQ.md)**
 
-**[Visit Love.fm ↗](https://kantwonet.github.io/love-fm/)** · **[Follow development](https://kantwonet.github.io/love-fm/#follow)**
+**[Visit Love.fm ↗](https://kantwonet.github.io/love-fm/)** · **[Follow development](https://github.com/kantwonet/love-fm/discussions/1)**
 
 </div>
 
@@ -28,7 +28,9 @@
 
 [Read the milestones](docs/PROGRESS.md) · [Development updates](docs/UPDATES.md) · [How to follow](docs/FOLLOW.md)
 
-**Star** to bookmark and support Love; use **Watch** to choose notifications. A star alone is not an announcement subscription.
+Open the **[development-updates discussion](https://github.com/kantwonet/love-fm/discussions/1)** and choose **Subscribe** to follow activity in that thread. For broader discussion notifications, use **Watch → Custom → Discussions** on the repository.
+
+**Star** to bookmark and support Love. A star alone is not an announcement subscription.
 
 ## One music life. A lot more connected.
 
