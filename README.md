@@ -2,7 +2,7 @@
 
 <img src="docs/assets/hero.png" width="1200" alt="Love.fm. Your music. Your people. Your whole world. A Windows-first music project in development: libraries, listening history, Pulse, discovery and playlists connected.">
 
-### Switch libraries. Track your listening life. Merge playlists. Share a room in Pulse.
+### Switch libraries. Scrobble in the background. Import your history. Share on Discord and in Pulse.
 
 **[Explore every feature](docs/FEATURES.md) · [Roadmap](docs/ROADMAP.md) · [Development progress](docs/PROGRESS.md) · [FAQ](docs/FAQ.md)**
 
@@ -11,6 +11,8 @@
 </div>
 
 > **In development.** The features below describe Love’s intended experience—not a released checklist. Source-specific capabilities require permission and validation. This is a public showcase; the application source is private and no installer is offered here.
+
+**[Scrobbling](docs/FEATURES.md#scrobbling) · [Background tracking](docs/FEATURES.md#background-scrobbling) · [Imports](docs/FEATURES.md#imports) · [Discord](docs/FEATURES.md#discord) · [Browser companion](docs/FEATURES.md#browser-companion)**
 
 ## One music life. A lot more connected.
 
@@ -34,6 +36,22 @@ Love is being built as a free, ad-free home for the files you own, the libraries
 ### Track the listening—not just the play button
 
 Actual listening time, qualified and partial plays, original imported dates, a correction history, On This Day and Time Machine. Heartbeat connects artists, albums and exact recordings with first/last listens, counts, trends and the plays behind each statistic. Optional **Your time with Love** keeps app foreground time separate from background music time.
+
+### Automatic scrobbling—even when Love is out of the way
+
+Enable Last.fm scrobbling for supported, authorized listening routes. Count actual playback time, keep partial listens distinct and reconcile duplicate native/browser observations without erasing real replays. With Love running in the background or tray, enabled scrobbling and configured imports do not require the main window to stay in front. **The computer must remain awake; Quit stops local work.** Connecting a source does not silently enable outbound scrobbling, and private listening suppresses new Love-originated scrobbles without later backfill.
+
+### Bring your listening history with you
+
+Import supported sources through a preview of new, duplicate, skipped and uncertain entries. Keep original timestamps and per-source progress in one expandable operation. Use continuous, scheduled or manual import modes; pause safely and resume unfinished work without repeating completed sources. **Importing history is not automatically submitting it elsewhere.** The manual scrobbler separately lets you stage tracks or albums, edit metadata and timestamps, and review a destination before submission.
+
+### Your music, on Discord
+
+Customizable **Discord Rich Presence** with supported fields and buttons, a preview, ordered source priority and a stable selected session. Pause clears the activity, while private listening suppresses Love’s Discord output. Local and paired-browser routes require their own validation. This is music activity from the app—not simply the GitHub connection on your Discord profile.
+
+### Connect the music in your browser
+
+A **paired browser companion** brings permitted observations from supported music contexts into Love. Chrome and Edge are the initial browser-validation targets; permissions and pairing are explicit and revocable. Reconcile desktop/browser sightings of the same play, treat YouTube and YouTube Music separately and keep unrelated browsing and typed text out of the listening record. Observing playback does not imply control of every website.
 
 ### Switch sources without losing the collection
 
@@ -80,7 +98,7 @@ A shared main/full-screen player, artwork-only always-on-top mini window, source
 | [Design & performance](docs/FEATURES.md#design) | Love identity, Light/Dark/System, reduced motion, accessible controls and measured large-library targets. |
 | [Recovery & support](docs/FEATURES.md#recovery) | Previewed recovery, safe updates, scoped support, responsible operation and release gates. |
 
-**[Read the complete public feature guide →](docs/FEATURES.md)**
+**[Read the complete public feature guide →](docs/FEATURES.md)** · [Check product-scope coverage](docs/SCOPE-COVERAGE.md)
 
 ## Ambitious scope. Clear release boundaries.
 

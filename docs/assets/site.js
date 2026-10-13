@@ -13,6 +13,6 @@ function update(){const q=norm(search.value.trim()),tokens=q.split(/\s+/).filter
 search.addEventListener('input',update);type.addEventListener('change',update);area.addEventListener('change',update);
 document.getElementById('reset-filters').addEventListener('click',()=>{search.value='';type.value='';area.value='';details.forEach(x=>x.open=false);update();search.focus();});
 document.getElementById('expand-features').addEventListener('click',e=>{const visible=details.filter(x=>!x.hidden),open=visible.some(x=>!x.open);visible.forEach(x=>x.open=open);e.currentTarget.textContent=open?'Collapse details':'Expand details';});
-document.querySelectorAll('a[data-jump]').forEach(a=>a.addEventListener('click',()=>{search.value='';type.value='';area.value='';update();}));
+document.querySelectorAll('a[data-jump]').forEach(a=>a.addEventListener('click',()=>{search.value='';type.value='';area.value='';update();const target=document.getElementById(a.hash.slice(1));if(target&&target.matches('details'))target.open=true;}));
 update();
 })();

@@ -8,6 +8,21 @@
 
 This guide organizes 111 public feature summaries across 16 areas. Those are navigation counts—not 111 accepted features or a progress denominator.
 
+## Core listening features — quick access
+
+These are main parts of the planned app, not optional descriptions buried under “desktop tools.”
+
+| Experience | What to explore |
+|---|---|
+| [Automatic scrobbling](#scrobbling) | Eligible actual listening, explicit source authorization and Last.fm submission outcomes. |
+| [Background operation](#background-scrobbling) | Enabled scrobbling and configured imports while Love runs in the tray; an awake computer is required. |
+| [History importing](#imports) | Multi-source previews, original timestamps, per-source progress and incremental continuation. |
+| [Manual scrobbler](#manual-scrobbler) | Stage tracks or albums and review metadata, time and destination before submission. |
+| [Discord Rich Presence](#discord) | Customizable music activity, stable source selection, pause behavior and private-listening controls. |
+| [Browser companion](#browser-companion) | Paired, permission-scoped web observations; initial Chrome and Edge validation targets. |
+
+Importing history, recording a new listen, submitting a scrobble and publishing Discord presence remain separate actions. [Product-scope coverage map](SCOPE-COVERAGE.md).
+
 ## Contents
 
 - [One library. Your choice of source.](#library)
@@ -178,15 +193,16 @@ Know what you really heard, where it came from, and how it connects to your musi
 
 *Blueprint references: HIST-001–011 · IMPORT-001–015 · USAGE-001–006*
 
-### Count actual listening, not skipped time
+<a name="scrobbling"></a>
+### Automatic scrobbling that counts real listening
 **Launch target** · Planned experience
 
-Measure time actually played. Pause and seek jumps do not earn listened time. Keep qualified and partial listens distinct, and record a genuine replay as a new play when it qualifies. Changing source in one continuous play does not by itself create another listen.
+After you enable scrobbling for a supported, authorized source, record eligible plays to Last.fm while keeping Love’s listening history distinct. Count actual playback time, not pause time or seek jumps. Keep qualified and partial listens separate. A genuine replay can qualify again; switching sources during one continuous play does not create an extra listen. Source connection and outbound scrobbling are separate choices.
 
-### One event, even when several sources see it
+### One listen, even across desktop and browser observations
 **Launch target** · Planned experience
 
-Keep original observations from imports and permitted native/browser monitoring, then reconcile duplicate observations of the same event. Similar song names or dates never justify deleting distinct real listens. Remote context is not automatically a Love-controlled play.
+Bring together permitted native playback, browser-companion observations and imported evidence, then reconcile observations of the same listening event. Do not double-count one play because two integrations detected it. Keep distinct real replays and uncertain matches separate. Remote Now Playing is labeled context, not proof that Love controlled or measured the full play.
 
 ### Explore your own timeline
 **Launch target** · Planned experience
@@ -198,25 +214,29 @@ Filter by date range, artist, album, track, source or text. Inspect original evi
 
 Revisit real recorded listening dates and defining periods. Make source-coverage gaps visible rather than inventing first listens or reconstructing an old saved library without an actual snapshot.
 
-### Import multiple sources as one operation
+<a name="imports"></a>
+### Bring your listening history into Love
 **Launch target** · Planned experience
 
-Preview new, duplicate, skipped and uncertain rows before the initial commit. Keep one parent operation with expandable source progress. Complete reviewed valid rows while uncertain ones stay staged; retry only unfinished work.
+Import supported listening-history sources through one expandable operation with per-source settings, progress and outcomes. Preview the date range and new, duplicate, skipped and uncertain entries before the initial commit. Preserve original listening timestamps and source evidence. Complete reviewed valid rows while uncertain ones remain staged, and retry only unfinished work. Importing history does not automatically submit it to Last.fm.
 
-### Continuous, scheduled or manual imports
+<a name="background-scrobbling"></a>
+### Background scrobbling and continuous importing
 **Launch target** · Planned experience
 
-Enable an ongoing scope explicitly. Continuous checking uses incremental progress and backoff, with scheduled/manual alternatives. Adding a new source or enlarging scope requires review. Local jobs need Love running on an awake computer.
+Keep approved listening observation, enabled scrobbling and configured continuous imports working while Love runs in the background or system tray. Closing the main window is not Quit. Explicit Quit stops local background work, and the computer must remain awake; powered-off execution is not promised. Import monitoring offers continuous, scheduled and manual modes, with incremental checks and backoff. Keep per-source authorization, private-listening controls and visible operation status in force. This is not unrestricted monitoring of every application.
 
-### History import is not an outbound scrobble
+<a name="submission-controls"></a>
+### Your history and your submissions are different records
 **Launch target** · Planned experience
 
-Preserve original dates in Love even when an external destination cannot accept them. Connecting a source does not enable scrobbling. Show original time and any separately reviewed submission timestamp; current provider limits must be validated before release.
+Love keeps original listening dates even when an external service cannot accept them. Source connection does not turn on scrobbling. Show the original listening time separately from any explicitly reviewed submission timestamp. Keep pending, submitted, confirmed, ignored, failed and uncertain destination outcomes visible; reconcile uncertain responses before retrying to avoid resending confirmed work. Do not silently restamp old imports.
 
+<a name="manual-scrobbler"></a>
 ### A proper manual scrobbler
 **Launch target** · Planned experience
 
-Stage tracks or albums, edit metadata and timestamps, choose the destination and inspect a final preview. Submitted, confirmed, ignored and uncertain outcomes remain separate. Manual entries are never presented as measured playback through Love.
+Stage tracks or albums, edit artist/track/album metadata and timestamps, select the destination and inspect a final preview before submitting. Inspect destination outcomes separately from the local record. Manual scrobbles are never presented as playback actually measured by Love, and a manual submission cannot silently bypass private-listening or provider rules.
 
 ### Your time with Love
 **Preferred** · Planned experience
@@ -565,15 +585,17 @@ Disclose Start with Windows on by default with an opt-out. Automatic startup goe
 
 An always-on-top cover with a small close X, drag movement and double-click return. Switching player surfaces shares the same session. Closing the artwork window does not stop playback; it is not another player with competing state.
 
-### Discord presence across eligible sources
+<a name="discord"></a>
+### Discord Rich Presence across eligible music sources
 **Launch target** · Planned experience
 
-Customize supported fields and buttons with a preview. Use ordered source priority and keep the chosen listening session instead of bouncing between observations. Pause clears presence, and private listening suppresses Love’s Discord output.
+Show your supported listening session on Discord, with previews of customizable activity fields, buttons and permitted deep links. Choose source priority and keep the selected session instead of bouncing between competing observations. Pause clears the presence while retaining the session choice; private listening suppresses Love’s Discord activity. Local and paired-browser routes need their own validation, and local file paths are never shared. This is the app’s music presence, not a GitHub-profile connection.
 
-### A paired browser companion
+<a name="browser-companion"></a>
+### Browser companion for the music in your tabs
 **Launch target** · Planned experience
 
-Initially validate Chrome and Edge with explicit music-site permissions and revocable desktop pairing. Observe approved music contexts, distinguish observation from playback control and reconcile browser/native observations of the same listen. Ignore unrelated browsing and text fields.
+Pair a companion extension with Love to connect supported web listening to the desktop music experience. Initial browser targets are Chrome and Edge; other browsers need separate validation. Grant explicit music-site permissions, revoke pairing when needed and reconcile browser/native observations of the same listen. Treat YouTube and YouTube Music as separate capability targets. Observation is not automatic playback control, and unrelated browsing or typed text stays outside the listening record.
 
 ### Artwork in the taskbar
 **Preferred** · Planned experience
