@@ -438,3 +438,48 @@ html[data-ambient-motion="paused"] .motion-icon::after { display:none; }
   .ambient-blob.b8 { animation-duration: 14.2222225s; animation-delay: -2.4444445s; }
   .ambient-blob.b9 { animation-duration: 11.1111110s; animation-delay: -6.8888890s; }
 }
+
+/* Direct repository entry: visible immediately, separate from announcement Follow. */
+.nav .github-entry {
+  display:inline-flex; align-items:center; justify-content:center; gap:7px;
+  color:var(--pink); border-color:#ffacbc66; background:#ffacbc10;
+  white-space:nowrap; min-height:40px; flex-shrink:0;
+}
+.nav .github-entry:hover { background:#ffacbc22; border-color:#ffacbcaa; }
+@media (min-width:701px) and (max-width:850px) {
+  .navlinks { gap:12px; }
+  .navlinks .optional { display:none; }
+  .nav .repo-link { padding:8px 11px; }
+}
+/* Only the phone header gains a second navigation row. Page content widths stay intact. */
+@media (max-width:700px) {
+  .top .nav {
+    display:grid; grid-template-columns:minmax(0,1fr) auto auto;
+    column-gap:10px; row-gap:0; min-height:98px; padding-top:9px; padding-bottom:5px;
+  }
+  .top .wordmark { grid-column:1; grid-row:1; }
+  .top .navlinks { display:contents; }
+  .top .navlinks > a:not(.repo-link) {
+    grid-row:2; align-self:center; justify-self:start;
+    padding:7px 2px; font-size:11px; min-height:31px;
+  }
+  .top .navlinks > a[href="#features"] { grid-column:1; }
+  .top .navlinks > a[href="#roadmap"] { grid-column:1; margin-left:66px; }
+  .top .navlinks > .optional { display:none; }
+  .top .navlinks > .github-entry {
+    grid-column:2; grid-row:1; padding:8px 10px; font-size:11px;
+    min-height:40px; line-height:1.2; gap:5px;
+  }
+  .top .navlinks > .repo-link:not(.github-entry) {
+    grid-column:2 / 4; grid-row:2; justify-self:end; align-self:center;
+    padding:6px 8px; min-height:31px; border-color:transparent;
+    color:var(--muted); font-size:11px; line-height:1.5;
+  }
+  .top .motion-toggle {
+    grid-column:3; grid-row:1; width:40px; min-width:40px;
+    height:40px; min-height:40px; padding:0;
+  }
+  html { scroll-padding-top:118px; }
+  .catalog-section { scroll-margin-top:118px; }
+  #follow { scroll-margin-top:118px; }
+}

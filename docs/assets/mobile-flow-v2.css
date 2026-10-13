@@ -1,0 +1,36 @@
+/* mobile-flow-v2 · 2026-10-13
+   Dedicated portrait-phone ambient paths, not another global speed multiplier.
+   Closed loops run continuously. Colors/alpha remain unchanged, with no opacity flashes.
+   Transform-only movement; no video, canvas or per-frame JavaScript.
+   All existing pause, hidden-tab and reduced-motion rules remain in control.
+   vmin distances do not change when a phone browser's address bar expands/collapses. */
+@media (max-width:700px) and (prefers-reduced-motion:no-preference) {
+  .love-ambient .ambient-blob {
+    width:108vmin; height:138vmin;
+    animation-name:love-phone-flow;
+    animation-timing-function:linear;
+    animation-direction:normal;
+    animation-iteration-count:infinite;
+  }
+  /* Independent positions and phases move visible colored edges across the viewport. */
+  .love-ambient .b1 {left:-30%;top:-12%;animation-duration:8s;animation-delay:-1.6s;}
+  .love-ambient .b2 {left:32%;top:-14%;animation-duration:9.2s;animation-delay:-5.06s;animation-direction:reverse;}
+  .love-ambient .b3 {left:-5%;top:16%;width:100vmin;animation-duration:10.4s;animation-delay:-7.28s;}
+  .love-ambient .b4 {left:30%;top:35%;animation-duration:8.4s;animation-delay:-2.52s;animation-direction:reverse;}
+  .love-ambient .b5 {left:0%;top:53%;animation-duration:11.6s;animation-delay:-4.06s;}
+  .love-ambient .b6 {left:-54%;top:28%;animation-duration:9.6s;animation-delay:-7.68s;animation-direction:reverse;}
+  .love-ambient .b7 {left:16%;top:-33%;animation-duration:8.8s;animation-delay:-5.72s;}
+  .love-ambient .b8 {left:40%;top:67%;animation-duration:12s;animation-delay:-1.44s;animation-direction:reverse;}
+  .love-ambient .b9 {left:-34%;top:76%;animation-duration:10.8s;animation-delay:-6.48s;}
+  /* Eight steps approximate an ellipse; loop endpoints match exactly. No eased dwell. */
+  @keyframes love-phone-flow {
+    0%,100% {transform:translate3d(-32vmin,0,0) rotate(-10deg) scale(.98,1.04);}
+    12.5% {transform:translate3d(-22.63vmin,-18.38vmin,0) rotate(-7deg) scale(1,1.02);}
+    25% {transform:translate3d(0,-26vmin,0) rotate(0deg) scale(1.03,.98);}
+    37.5% {transform:translate3d(22.63vmin,-18.38vmin,0) rotate(7deg) scale(1.04,.96);}
+    50% {transform:translate3d(32vmin,0,0) rotate(10deg) scale(1.02,.98);}
+    62.5% {transform:translate3d(22.63vmin,18.38vmin,0) rotate(7deg) scale(1,1.02);}
+    75% {transform:translate3d(0,26vmin,0) rotate(0deg) scale(.98,1.05);}
+    87.5% {transform:translate3d(-22.63vmin,18.38vmin,0) rotate(-7deg) scale(.97,1.05);}
+  }
+}
