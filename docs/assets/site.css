@@ -421,3 +421,20 @@ html[data-ambient-motion="paused"] .motion-icon::after { display:none; }
  .development-brief{padding:30px 0;}
 }
 @media(max-width:380px){header .wordmark .brand-name{display:none;}header .wordmark .brand-nav-mark{width:33px;}}
+
+/* Phone ambient motion · phone-motion1 · 2026-10-13
+   Twice the existing pace at widths up to 700 CSS pixels only.
+   Halved durations and negative delays preserve the initial phase.
+   Colors, geometry, keyframes, desktop timing, and all controls stay unchanged.
+   Reduced-motion and hidden-tab pausing remain governed by existing rules. */
+@media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
+  .ambient-blob.b1 { animation-duration: 10.4444445s; animation-delay: -2.0000000s; }
+  .ambient-blob.b2 { animation-duration: 11.7777775s; animation-delay: -4.8888890s; }
+  .ambient-blob.b3 { animation-duration: 13.1111110s; animation-delay: -7.5555555s; }
+  .ambient-blob.b4 { animation-duration: 9.1111110s; animation-delay: -2.8888890s; }
+  .ambient-blob.b5 { animation-duration: 13.5555555s; animation-delay: -4.0000000s; }
+  .ambient-blob.b6 { animation-duration: 12.4444445s; animation-delay: -5.5555555s; }
+  .ambient-blob.b7 { animation-duration: 10.0000000s; animation-delay: -6.4444445s; }
+  .ambient-blob.b8 { animation-duration: 14.2222225s; animation-delay: -2.4444445s; }
+  .ambient-blob.b9 { animation-duration: 11.1111110s; animation-delay: -6.8888890s; }
+}
