@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/hero.png" width="1200" alt="Love.fm. Your music. Your people. Your whole world. A Windows-first music project in development: libraries, listening history, Pulse, discovery and playlists connected.">
+<img src="docs/assets/hero.png?v=20261013-motion1" width="1200" alt="Love.fm. Your music. Your history. Your friends. All in one place. A Windows-first music project in development: libraries, listening history, Pulse, discovery and playlists connected.">
 
 ### Switch libraries. Scrobble in the background. Import your history. Share on Discord and in Pulse.
 

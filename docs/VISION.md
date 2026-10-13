@@ -2,7 +2,7 @@
 
 [← Overview](../README.md) · [Explore the full scope](FEATURES.md) · [Roadmap](ROADMAP.md)
 
-## Your music. Your history. Your people.
+## Your music. Your history. Your friends. All in one place.
 
 Love is being developed as a free, ad-free Windows-first home for an entire music life: the files you own, the libraries you connect, the listening history you keep, the playlists you shape, the context you explore and the sessions you share.
 
