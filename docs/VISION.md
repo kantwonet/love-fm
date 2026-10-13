@@ -1,47 +1,25 @@
-# The Love.fm vision
+# Love.fm — The vision
 
-[← Project overview](../README.md)
+[← Overview](../README.md) · [Explore the full scope](FEATURES.md) · [Roadmap](ROADMAP.md)
 
-## A music home, not another isolated collection
+## Your music. Your history. Your people.
 
-The product direction is a Windows-first, free, ad-free place to play, organize, explore and share a music life across local files and supported services. The aim is an approachable interface with deeper control available when it matters.
+Love is being developed as a free, ad-free Windows-first home for an entire music life: the files you own, the libraries you connect, the listening history you keep, the playlists you shape, the context you explore and the sessions you share.
 
-These are **design commitments**, not claims that every route is implemented or publicly available.
+The distinctive idea is the connection between these experiences. Switching a Library source view should not discard the collection. An actual listen should enrich the history and Heartbeat context without creating duplicate observations. A Pulse session should preserve who added each track. A merged playlist should have reviewed exact-recording duplicates removed without overwriting the originals.
 
-## The principles
+## What makes the design different
 
-### Keep the source visible
+**Source-aware, not source-blind.** Unified browsing retains editions, provider versions, local copies and explicit playback choices. It never turns a working endpoint into a claim of universal provider permission.
 
-A local file, a provider catalog entry, a saved playlist item and an accepted listen are not interchangeable. The interface should make the relevant source and destination clear. Unsupported routes should say so instead of pretending to work.
+**Listening-aware, not counter-first.** Measured playback, imported history, partial listening, app use and external submissions stay distinguishable. Original evidence survives correction; privacy is evaluated before new outward activity.
 
-### Treat local music as first-class
+**Shared, not rebroadcast.** Pulse coordinates an invited room while participants resolve music through their own accepted source access. Local pause, room pause, host succession, chat and queue contribution have their own clear meanings.
 
-Selected folders, local collections, playlist order and personal choices matter even when an external service is unavailable. Missing audio should remain an availability problem—not permission to silently replace a song or discard a collection.
+**Portable playlists, not hidden synchronization.** Copy, one-way Sync, Save to source and deduplicated Merge have explicit destinations. Two-way Mirror and live Merge remain later scope.
 
-### Preserve intent
+**Local music belongs.** Your own files participate in the same collection, queue, history and detail experience. Removing a library item is not permission to delete its audio file.
 
-An action affecting a playlist, library or external account should say what it changes. Copying a playlist, synchronizing it and merging it are different operations. Two-way mirroring is a later scope, not another name for a one-time copy.
+**Ambitious and accountable.** Features describe product intent until their implementation, authorization and acceptance are established. The feature guide covers the breadth; Progress records bounded internal evidence. Neither invents release readiness.
 
-### Make uncertainty visible
-
-An old pending submission is not proof that it was never sent. A recovery check should preserve uncertainty instead of guessing and creating a duplicate. A clear “needs review” state is better than a confident but incorrect success message.
-
-### Separate local recovery from permission to act
-
-Recovering local records should not automatically resume uploads, start playback, recreate scheduled tasks or revive an old approval. Valid local recovery and permission to resume an external action are separate decisions.
-
-### Build social features with boundaries
-
-The blueprint includes profiles, Pulse room experiences, queue attribution and privacy controls. Service authentication, permissions, deployment and operational acceptance remain distinct requirements. This public notebook does not announce a deployed public social service.
-
-## The intended release shape
-
-The agreed product direction includes core library and local music, supported playback and queues, search, history and imports, Heartbeat, privacy and onboarding, recovery/support, core Social and Pulse, desktop integration, and supported Copy, one-way Sync and one-time Merge routes.
-
-Preferred and later features have their own disposition. A planned feature is not automatically in the first release, and the product will not advertise an unverified provider integration as available.
-
-## What makes this project worth following
-
-Love combines a broad music experience with unusually explicit questions about data ownership, provenance and interrupted work. The public milestones aim to show both sides: what the product is trying to become, and the concrete engineering needed to make that credible.
-
-This is not a promise of perfect software. It is a commitment to distinguish intentions, implemented behavior, accepted evidence and a public release.
+Read the [full feature guide](FEATURES.md) for the detailed capabilities, priorities and cross-feature boundaries.

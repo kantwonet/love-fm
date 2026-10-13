@@ -1,47 +1,27 @@
-# Frequently asked questions
+# Love.fm — Questions & answers
 
-[← Project overview](../README.md)
+[← Overview](../README.md) · [Full feature guide](FEATURES.md) · [Roadmap](ROADMAP.md)
 
-## Can I download the app here?
+## Can I download Love now?
+This repository and portal are a public product showcase, not an installer or public beta. No download is offered here. Internal source acceptance does not by itself create a released build.
 
-No application binary or installer is distributed by this showcase. The project is in private development, and these pages do not announce a public release or public beta.
+## Does “free” mean streaming subscriptions are included?
+No. Free and ad-free is the Love product direction. Each external service keeps its own access, subscriptions, permissions and limits. A shared Pulse room does not transfer another participant’s entitlement.
+
+## Are all the features on this page finished?
+No. Launch target, Preferred, Later and Idea describe scope. The dated development section separately identifies reported accepted internal checkpoints. The feature guide does not convert planning approval into implementation evidence.
 
 ## Is Love open source?
+The application source remains private. This public repository contains presentation content and static website assets. Publishing the showcase does not make a licensing decision for the app.
 
-Application source is not published in this repository. Public documentation is not an announcement of an open-source application license. See the [repository notice](../NOTICE.md).
+## Do I need a Love account?
+The design keeps core local music, history, Heartbeat and authorized local transfers usable as a guest. Social, Pulse and Love cloud identity require a Love account; individual providers may require their own login.
 
-## Is the product intended to be free?
+## Does Love track everything I do?
+No unrestricted computer tracking is part of this product direction. Listening observations are permission-scoped. Optional personal usage counters exclude raw clicks, keys, pointer movement and entered text. Separately disclosed, default-on technical diagnostics have a restricted allowlist and opt-out.
 
-Yes. The product blueprint’s direction is a free, ad-free music home. This does not provide subscriptions to external music services or change their access requirements.
+## Does the Linux test environment mean a Linux app release?
+No. Linux is part of internal validation. Windows 11 x64 is the initial public target; Linux desktop, Mac and mobile expansion are separate future scope.
 
-## Does it already support every service and feature listed?
-
-No such claim is made here. Product direction, source implementation, provider authorization, internal acceptance and public availability are different states. The named feature areas describe the intended product, with the accepted development milestones listed separately.
-
-## Does testing on Linux mean a Linux desktop release exists?
-
-No. Linux is a validation environment in the reported engineering workflow. The initial desktop product target is Windows; platform expansion is later scope.
-
-## Why do so many updates concern safety?
-
-Listening history, playlist choices, saved approvals and pending operations are easy to misinterpret after interruption or restore. A-02 establishes and tests those boundaries. It is one engineering program within the larger product—not the whole Love roadmap.
-
-## How far along is it?
-
-See [Progress](PROGRESS.md). We show specific accepted outcomes and explicitly list what remains unverified. An overall public completion percentage is not available until the requirements, denominator and evidence have been reconciled.
-
-## Are the milestones third-party audited?
-
-No. This showcase summarizes project-maintained acceptance reports. It does not expose the private evidence packages or claim external certification.
-
-## Where are the screenshots and demos?
-
-No public demo pack accompanies this initial public showcase. Existing development screenshots can contain private listening history, accounts and unrelated desktop information. New public captures should use sanitized or fictional data, carry a build/date label and show actual implemented behavior. Illustrations or future concepts must not be presented as running application screens.
-
-## How will the public page be maintained?
-
-With concise updates after meaningful accepted milestones. The internal ledger stays authoritative, and changes to this showcase must not delay application development. No continuous publication service is required.
-
-## What should not be posted in public feedback?
-
-Do not post access tokens, account identifiers, personal databases, listening-history exports, private logs or security-sensitive details. This showcase does not establish a private security-reporting mailbox or a production support service.
+## How complete is this guide?
+It covers the feature areas, important cross-feature rules, source dependencies and release boundaries of Product Blueprint revision 2.8. Detailed internal acceptance records, operational secrets and source code are intentionally not public. Later product decisions require an explicit update to this dated guide.
