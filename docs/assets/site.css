@@ -360,3 +360,64 @@ html[data-ambient-motion="paused"] .motion-icon::after { display:none; }
 @media (prefers-reduced-motion:reduce) {
  .scene-enter { animation:none!important; }
 }
+
+/* Approved Love.fm identity and public finishing details — 2026-10-13.
+   Existing layout, motion durations, tour script and feature content are preserved. */
+.wordmark {display:inline-flex;align-items:center;gap:9px;white-space:nowrap;flex-shrink:0;}
+.wordmark .brand-nav-mark {display:block;width:36px;height:auto;flex:none;}
+.wordmark .brand-name {color:var(--text);}
+.wordmark .brand-dot {color:var(--pink);}
+.guide-brand-mark {width:23px;height:auto;vertical-align:middle;margin-right:7px;}
+.art {display:grid;place-items:center;}
+.hero-brand-logo {width:min(92%,440px);height:auto;display:block;filter:drop-shadow(0 16px 35px #0004);}
+.art .float {z-index:1;}
+.art .float.f1 {top:9px;left:0;}
+.art .float.f2 {right:-2%;top:156px;}
+.art .float.f3 {bottom:16px;left:0;}
+.art .artcaption {bottom:-17px;}
+.development-brief {padding:37px 0 44px;}
+.brief-heading {display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:20px;}
+.brief-heading h2 {font-size:clamp(24px,2.6vw,34px);line-height:1.2;letter-spacing:-1px;margin:10px 0 0;}
+.snapshot-date {flex:none;font-size:12px;line-height:1.7;color:var(--muted);text-align:right;margin:0;}
+.snapshot-date span {font-size:10px;}
+.brief-grid {display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.brief-card {border:1px solid #ffffff26;border-radius:22px;padding:25px;background:#14141fdb;}
+.brief-card.accepted {background:linear-gradient(120deg,#84dacb08,transparent),#14141fdb;}
+.brief-label {font-size:10px;letter-spacing:1.35px;font-weight:750;color:var(--purple);}
+.accepted .brief-label {color:var(--mint);}
+.brief-card h3 {font-size:24px;letter-spacing:-.7px;line-height:1.2;margin:13px 0;}
+.brief-card p {font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:18px;max-width:70ch;}
+.brief-card a {font-size:12px;font-weight:700;color:var(--pink);}
+.brief-card a:hover,.brief-bottom a:hover,.follow-help:hover {text-decoration:underline;}
+.brief-bottom {display:flex;gap:28px;align-items:center;justify-content:space-between;padding-top:16px;}
+.brief-bottom p {font-size:11px;line-height:1.7;color:var(--muted);max-width:80ch;margin:0;}
+.brief-bottom strong {color:var(--text);}
+.brief-bottom a {font-size:12px;color:var(--pink);font-weight:700;flex-shrink:0;}
+.follow-heading {display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:17px;}
+.follow-heading img {width:64px;height:auto;}
+.follow-actions {display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:26px auto;}
+.follow-intro {max-width:650px;margin:0 auto!important;}
+.follow-choices {display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:780px;margin:24px auto;text-align:left;}
+.follow-choices > div {border-top:1px solid #ffffff28;padding-top:13px;}
+.follow-choices h3 {font-size:17px;margin:10px 0;letter-spacing:-.3px;}
+.follow-choices p {font-size:13px!important;margin:0;line-height:1.8;}
+.cta .follow-disclosure {font-size:11px;max-width:690px;margin:20px auto 12px;}
+.follow-help {font-size:12px;font-weight:700;color:var(--pink);}
+#follow {scroll-margin-top:95px;}
+@media(min-width:1920px){.hero-brand-logo{width:min(90%,505px);}}
+@media(max-width:1000px){.hero-brand-logo{width:min(96%,390px);}}
+@media(max-width:700px){
+ .wordmark{gap:6px;letter-spacing:-1.5px;font-size:25px;}
+ .wordmark .brand-nav-mark{width:29px;}
+ .hero-brand-logo{width:min(98%,340px);}
+ .art .artcaption{bottom:-4px;font-size:9px;}
+ .art .float.f1{top:5px;} .art .float.f2{top:144px;} .art .float.f3{bottom:20px;}
+ .brief-heading{display:block;}.snapshot-date{text-align:left;margin-top:12px;}
+ .brief-grid,.follow-choices{grid-template-columns:1fr;}.brief-card{padding:23px;}
+ .brief-bottom{display:block;}.brief-bottom a{display:inline-block;margin-top:12px;}
+ .follow-heading{gap:12px;}.follow-heading .eyebrow{font-size:9px;letter-spacing:1.5px;}
+ .follow-choices{gap:12px;}.follow-actions{flex-direction:column;align-items:stretch;}
+ .follow-actions .button{font-size:12px;padding:13px 14px;}
+ .development-brief{padding:30px 0;}
+}
+@media(max-width:380px){header .wordmark .brand-name{display:none;}header .wordmark .brand-nav-mark{width:33px;}}

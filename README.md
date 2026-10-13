@@ -6,13 +6,29 @@
 
 **[Explore every feature](docs/FEATURES.md) · [Roadmap](docs/ROADMAP.md) · [Development progress](docs/PROGRESS.md) · [FAQ](docs/FAQ.md)**
 
-[Open the visual Love portal ↗](https://kantwonet.github.io/love-fm/)
+**[Visit Love.fm ↗](https://kantwonet.github.io/love-fm/)** · **[Follow development](https://kantwonet.github.io/love-fm/#follow)**
 
 </div>
 
 > **In development.** The features below describe Love’s intended experience—not a released checklist. Source-specific capabilities require permission and validation. This is a public showcase; the application source is private and no installer is offered here.
 
 **[Scrobbling](docs/FEATURES.md#scrobbling) · [Background tracking](docs/FEATURES.md#background-scrobbling) · [Imports](docs/FEATURES.md#imports) · [Discord](docs/FEATURES.md#discord) · [Browser companion](docs/FEATURES.md#browser-companion)**
+
+
+## The latest development, at a glance
+
+**Last confirmed: 13 October 2026. This is a dated project summary, not live CI.**
+
+| View | Latest published position |
+| :--- | :--- |
+| **Accepted in internal development** | The bounded 500-row start, chunk-save, pause, explicit resume and completion workflow. Healthy completion no longer also reports recovery required. |
+| **Last reported focus** | Reconcile completion records while retaining the recovery hold. |
+| **Still separate** | Successful resume after process death and broader transaction/recovery obligations. |
+| **Public availability** | No public installer or announced release date. Internal acceptance is not release readiness. |
+
+[Read the milestones](docs/PROGRESS.md) · [Development updates](docs/UPDATES.md) · [How to follow](docs/FOLLOW.md)
+
+**Star** to bookmark and support Love; use **Watch** to choose notifications. A star alone is not an announcement subscription.
 
 ## One music life. A lot more connected.
 
